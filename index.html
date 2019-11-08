@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>Projet temporairement sans nom</title>
-  </head>
-  <body>
-    <div class="main_menu">
-      <form class="" action="index.html" method="post">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="JS/slider.js"></script>
+    <script src="JS/showAndHideMenu.js"></script>
+</head>
+<body>
+<div class="main_menu">
+    <form class="" action="index.html" method="post">
         <div class="slidecontainer">
-          <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
-          <p>Value: <span id="output"></span></p>
+            <h2>Bac+: <span id="output"></span></h2>
+            <label for="myRange"></label><input type="range" min="1" max="8" value="0" class="slider" id="myRange">
         </div>
-      </div>
     </form>
-  </div>
-  <script type="text/javascript" src="./JS/slider.js"></script>
-  </body>
+</div>
+<div class="wideScreen">
+    <button onclick="myFunction()">
+
+    </button>
+</div>
+<div class="background">
+    <img src="IMG/map.png" alt="MAP">
+</div>
+</body>
 </html>
