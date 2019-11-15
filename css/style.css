@@ -7,10 +7,6 @@ body {
 
 }
 
-.background > img {
-
-}
-
 .slidecontainer {
     padding-top: 5rem;
 
@@ -22,31 +18,48 @@ body {
 }
 
 .main_menu {
-    display: none;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: #358ef3;
     height: 9rem;
     width: 100%;
 }
 
+#panel {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main_menu {
+    background-color: #358ef3;
+    height: 9rem;
+    overflow: hidden;
+}
+
 .wideScreen {
-    margin-top: -0.625rem;
     width: 4rem;
     height: 1rem;
-    position: fixed;
-    top: 9rem;
-    left: 0;
 }
 
-.wideScreen > button {
+.wideScreen>button {
+    width: 100%;
+    height: 100%;
+    background-color: #358ef3;; /* Green */
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.wideScreen>button>img {
     width: 100%;
     height: 100%;
 }
-
-.wideScreen > button > img {
-    width: 100%;
-    height: 100%;
+.flip img{
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+    transform: rotate(-180deg);
 }
 
 .slider {

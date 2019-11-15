@@ -1,5 +1,6 @@
-$(document).ready(function () {
-    $(".buttonShowAndHide").click(function () {
-        $(".mainMenu").slideDown("slow");
+$(document).ready(function() {
+    $("#flip").click(function() {
+        $("#panel-inner").slideToggle("slow");
+        $("#flip").toggleClass('flip img');
     });
 });
