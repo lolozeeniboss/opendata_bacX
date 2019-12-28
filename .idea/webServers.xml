@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="92727666-089a-4d87-84f1-4076d6a22b4d" name="iut" url="http://etudiant.u-pem.fr">
-        <fileTransfer host="etudiant.u-pem.fr" port="21" rootFolder="/mnt/traban_home/3in2/lpistill/WWW-perso">
+        <fileTransfer host="etudiant.u-pem.fr" port="21" rootFolder="/mnt/traban_home/3in2/lpistill/">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

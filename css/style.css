@@ -2,31 +2,45 @@ body {
     margin: 0;
 }
 
-.slidecontainer > h2 {
-    margin: 0 0 0.625rem 25rem;
+.primalien ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
 
+.primalien li {
+    float: left;
+}
+
+.primalien li:last-child {
+    float: right;
 }
 
 .slidecontainer {
-    padding-top: 5rem;
-
+    margin-top: 3rem;
 }
 
-.background > img {
+.slidecontainer > h2 {
+    margin: 0 0 0.625rem 25rem;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3368ff;
+    text-align: center;
+}
+
+.Map > img {
     width: 100%;
     height: 100%;
 }
 
-.main_menu {
-    position: sticky;
-    top: 0;
-    background-color: #358ef3;
-    height: 9rem;
-    width: 100%;
-}
 
 #panel {
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -35,27 +49,33 @@ body {
     background-color: #358ef3;
     height: 9rem;
     overflow: hidden;
+    width: 100%;
+    top: 0;
+    box-shadow: 63px 5px 5px grey;
 }
 
 .wideScreen {
+    z-index: 2;
     width: 4rem;
     height: 1rem;
 }
 
-.wideScreen>button {
+.wideScreen > button {
     width: 100%;
     height: 100%;
-    background-color: #358ef3;; /* Green */
+    background-color: #358ef3;
     border: none;
     display: inline-block;
     font-size: 16px;
+    border-bottom-right-radius: 255px;
 }
 
-.wideScreen>button>img {
+.wideScreen > button > img {
     width: 100%;
     height: 100%;
 }
-.flip img{
+
+.flip img {
     -moz-transition: transform 1s;
     -webkit-transition: transform 1s;
     transition: transform 1s;
@@ -67,7 +87,7 @@ body {
     width: 50%;
     height: 1rem;
     border-radius: 0.35rem;
-    background: rgb(128,128,128);
+    background: rgb(128, 128, 128);
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -93,4 +113,14 @@ body {
     border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
+}
+
+.mySchoolOrigin{
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 60%;
+    background-color: #b1b1b1;
+    width: 20%;
+    height: 100%;
+    position: absolute;
 }

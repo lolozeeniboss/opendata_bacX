@@ -5,7 +5,7 @@
       <paths name="iut">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/WWW-perso" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
