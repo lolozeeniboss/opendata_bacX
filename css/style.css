@@ -2,6 +2,14 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
 .primalien ul {
     display: inline;
     margin: 0;
@@ -26,12 +34,14 @@ body {
 }
 
 footer {
-    position: fixed;
+    z-index: 2;
+    float: left;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #3368ff;
     text-align: center;
+    position: fixed;
 }
 
 .Map > img {
@@ -43,9 +53,11 @@ footer {
 #panel {
     top: 0;
     width: 100%;
+    float: left;
 }
 
 .main_menu {
+    z-index: 1;
     background-color: #358ef3;
     height: 9rem;
     overflow: hidden;
@@ -115,7 +127,7 @@ footer {
     cursor: pointer;
 }
 
-.mySchoolOrigin{
+/*.mySchoolOrigin {
     margin-top: 0;
     margin-bottom: 0;
     opacity: 60%;
@@ -123,4 +135,12 @@ footer {
     width: 20%;
     height: 100%;
     position: absolute;
+    overflow: scroll;
+}*/
+
+#mapid {
+    height: 180px;
+    width: 100%;
 }
+
+/*form*/
