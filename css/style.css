@@ -2,53 +2,17 @@ body {
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
-}
-
 li {
     list-style-type: none;
 }
 
-.primalien ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-}
-
-.primalien li {
-    float: left;
-}
-
-.primalien li:last-child {
-    float: right;
-}
-
 .slidecontainer {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .slidecontainer > h2 {
     margin: 0 0 0.625rem 25rem;
 }
-
-footer {
-    z-index: 2;
-    float: left;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #3368ff;
-    text-align: center;
-    position: fixed;
-}
-
-.Map > img {
-    width: 100%;
-    height: 100%;
-}
-
 
 #panel {
     top: 0;
@@ -127,6 +91,45 @@ footer {
     cursor: pointer;
 }
 
+footer ul {
+    margin: 0;
+    vertical-align: center;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    list-style: none;
+    text-align: right;
+    background-color: #3368ff;
+}
+
+footer nav {
+    vertical-align: center;
+}
+
+footer a:link, a:visited {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    background-color: #3368ff;
+    color: #3368ff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0;
+    transition: border-radius 2s, background-color 2s, padding-left 2s, padding-right 2s, color 2s;
+}
+
+footer a:hover, a:active {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 2rem;
+    background-color: #20f4e7;
+}
+
 /*.mySchoolOrigin {
     margin-top: 0;
     margin-bottom: 0;
@@ -138,9 +141,12 @@ footer {
     overflow: scroll;
 }*/
 
-#mapid {
-    height: 180px;
-    width: 100%;
+#mapcontainer {
+    top:9rem;
+    bottom: 1.15rem;
 }
 
-/*form*/
+#mapid {
+    width: 100%;
+    height: 100%;
+}

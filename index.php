@@ -48,61 +48,54 @@ if (isset($_POST["formbutton"])) {
             crossorigin=""></script>
 </head>
 <body>
-<div id="panel">
-    <div class="main_menu" id="panel-inner">
-        <nav>
-            <ul>
-                <form action="index.php" method="POST" name="form">
-                    <select class="select" placeholder="votre diplome" name="diplome">
-                        <option value="" disabled selected>-- votre diplome --</option>
-                        <?php
-                        foreach ($facets_dip as $facet) {
-                            $data = $facet->path;
-                            print "<option value=\"" . $data . "\">" . $data . "</option>";
-                        }
+<div class="main_menu" id="panel-inner">
+    <nav>
+        <ul>
+            <form action="index.php" method="POST" name="form">
+                <select class="select" placeholder="votre diplome" name="diplome">
+                    <option value="" disabled selected>-- votre diplome --</option>
+                    <?php
+                    foreach ($facets_dip as $facet) {
+                        $data = $facet->path;
+                        print "<option value=\"" . $data . "\">" . $data . "</option>";
+                    }
 
-                        ?>
-                    </select>
-                    <select class="select" placeholder="votre departement" name="departement">
-                        <option value="" disabled selected>-- votre departement --</option>
-                        <?php
-                        foreach ($facets_dep as $facet) {
-                            $data = $facet->path;
-                            print "<option value=\"" . $data . "\">" . $data . "</option>";
-                        }
-                        ?>
-                    </select>
-                    <select class="select" placeholder="votre filiere" name="filiere">
-                        <option value="" disabled selected>-- votre filiere --</option>
-                        <?php
-                        foreach ($facets_fil as $facet) {
-                            $data = $facet->path;
-                            print "<option value=\"" . $data . "\">" . $data . "</option>";
-                        }
+                    ?>
+                </select>
+                <select class="select" placeholder="votre departement" name="departement">
+                    <option value="" disabled selected>-- votre departement --</option>
+                    <?php
+                    foreach ($facets_dep as $facet) {
+                        $data = $facet->path;
+                        print "<option value=\"" . $data . "\">" . $data . "</option>";
+                    }
+                    ?>
+                </select>
+                <select class="select" placeholder="votre filiere" name="filiere">
+                    <option value="" disabled selected>-- votre filiere --</option>
+                    <?php
+                    foreach ($facets_fil as $facet) {
+                        $data = $facet->path;
+                        print "<option value=\"" . $data . "\">" . $data . "</option>";
+                    }
 
-                        ?>
-                    </select>
-                    <input type="submit" value="rechercher" name="formbutton">
+                    ?>
+                </select>
+                <input type="submit" value="rechercher" name="formbutton">
+            </form>
+        </ul>
+        <ul>
+            <li>
+                <form action="index.php" class="" method="post">
+                    <div class="slidecontainer">
+                        <h2>Bac+: <span id="output"></span></h2>
+                        <label for="myRange"></label>
+                        <input class="slider" id="myRange" max="8" min="1" type="range" value="0">
+                    </div>
                 </form>
-            </ul>
-            <ul>
-                <li>
-                    <form action="index.php" class="" method="post">
-                        <div class="slidecontainer">
-                            <h2>Bac+: <span id="output"></span></h2>
-                            <label for="myRange"></label>
-                            <input class="slider" id="myRange" max="8" min="1" type="range" value="0">
-                        </div>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="wideScreen">
-        <button id="flip">
-            <img alt="arrowup" src="IMG/arrow.svg">
-        </button>
-    </div>
+            </li>
+        </ul>
+    </nav>
 </div>
 <div class="mySchools">
     <?php
@@ -112,13 +105,22 @@ if (isset($_POST["formbutton"])) {
             foreach ($facets_request as $school) {
                 echo ">>>" . $school->{'name'} . "<<<" . "<br>";
             }
-        }else{
+        } else {
             echo "nous n'avons trouvé aucun résultat en " . $post_filiere . " dans le département de " . $post_departement . " pour un " . $post_diplome . "<br><br>";
         }
     }
     ?>
 </div>
-<div id="mapid"></div>
+<div id="mapcontainer">
+    <div id="mapid"></div>
+</div>
+<footer>
+    <nav>
+        <ul class="importantlinks">
+            <li><a href="https://github.com/lolozeeniboss/opendata_bacX.git">en savoir plus(GitHub)</a></li>
+        </ul>
+    </nav>
+</footer>
 <script src="JS/slider.js"></script>
 <script src="JS/showAndHideMenu.js"></script>
 <script src="JS/map.js"></script>
