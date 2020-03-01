@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .row.header {
+    background-color: #358ef3;
+    flex: 0 1 auto;
+}
+
+.box .row.content {
+    flex: 1 1 auto;
+}
+
+.box .row .footer {
+    flex: 0 1 40px;
+}
+
+.mySchools {
+    text-align: center;
+    display: inline-block;
+    float: left;
+    background-color: #2bf4b6;
+    width: 20%;
+    height: 100%;
+
+}
+
+.mySchoolsinner {
+    display: inline-list-item;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+}
+
+.infobox {
+    display: inline-block;
+    background: #fff;
+    border-radius: 2px;
+    margin: 1rem;
+    padding: 0 5vh 0 5vh;
+    position: relative;
+}
+
+.infobox-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.infobox-1:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.infobox-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.infobox-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.infobox-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.infobox-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#mapcontainer {
+    float: left;
+    height: 100%;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    color: white;
+    text-align: right;
+    background-color: #3368ff;
+
+}
+
+footer ul {
+    vertical-align: center;
+    list-style-type: none;
+}
+
+footer a:link, a:visited {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #2bf4b6;
+    color: #2bf4b6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    transition: border-radius 2s, background-color 2s, padding-left 2s, padding-right 2s, color 2s, width 2s;
+}
+
+footer a:hover, a:active {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 2rem;
+    background-color: #20f4e7;
+    color: #074396;
+    width: unset;
+    font-size: unset;
+}
