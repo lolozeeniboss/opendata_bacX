@@ -1,18 +1,31 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 li {
     list-style-type: none;
 }
 
+nav {
+    overflow: auto;
+}
+
+/*
 .slidecontainer {
     margin-top: 2rem;
 }
 
 .slidecontainer > h2 {
     margin: 0 0 0.625rem 25rem;
-}
+}*/
 
 #panel {
     top: 0;
@@ -21,15 +34,19 @@ li {
 }
 
 .main_menu {
-    z-index: 1;
     background-color: #358ef3;
     height: 9rem;
-    overflow: hidden;
     width: 100%;
     top: 0;
-    box-shadow: 63px 5px 5px grey;
+    /*box-shadow: 63px 5px 5px grey;*/
 }
 
+.middle {
+    width: 100%;
+    height: 100%;
+}
+
+/*
 .wideScreen {
     z-index: 2;
     width: 4rem;
@@ -89,10 +106,11 @@ li {
     border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
-}
+}*/
 
 footer ul {
     margin: 0;
+    list-style-type: none;
     vertical-align: center;
 }
 
@@ -102,7 +120,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    list-style: none;
     text-align: right;
     background-color: #3368ff;
 }
@@ -130,20 +147,18 @@ footer a:hover, a:active {
     background-color: #20f4e7;
 }
 
-/*.mySchoolOrigin {
-    margin-top: 0;
-    margin-bottom: 0;
-    opacity: 60%;
+.mySchools {
+    float: left;
     background-color: #b1b1b1;
     width: 20%;
     height: 100%;
-    position: absolute;
     overflow: scroll;
-}*/
+}
 
 #mapcontainer {
-    top:9rem;
-    bottom: 1.15rem;
+    float: left;
+    width: 80%;
+    height: 100%;
 }
 
 #mapid {
