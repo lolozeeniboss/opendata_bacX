@@ -129,8 +129,13 @@ footer nav {
 }
 
 footer a:link, a:visited {
+<<<<<<< HEAD:css/style.css
     padding-left: 0rem;
     padding-right: 0rem;
+=======
+    padding-left: 0;
+    padding-right: 0;
+>>>>>>> master:old/style.css
     background-color: #3368ff;
     color: #3368ff;
     text-align: center;
